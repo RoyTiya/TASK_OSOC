@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head><title>Landing page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div style="position: relative; left: 0; top: 0;">
+    <img src="images/osoc_white.png" class="image1"/>
+    <img src="images/NITT logo.png" class="image2"/>
+  </div>
+<br><center>
+<h1 style="font-family:verdana;">OPEN SOURCE OPEN COMMUNITY</h1>
+<h5 style="color:white">Since 2011</h5>
+
+<br>
+<div class="slider-box">
+  <div id="slider">
+    <img src="images/INSTA4.png">
+    <img src="images/INSTA 2.png">
+    <img src="images/INSTA5.png">
+  </div>
+  <div class="indicators">
+    <span id="btn1" class="active"></span>
+    <span id="btn2"></span>
+    <span id="btn3"></span>
+  </div>
+</div>
+</center>
+<center>
+<script>
+  var slide = document.getElementById("slider");
+  var btn1 = document.getElementById("btn1");
+  var btn2 = document.getElementById("btn2");
+  var btn3 = document.getElementById("btn3");
+
+  btn1.onclick = function(){
+    slide.style.transform = "translateX(0px)";
+    btn1.classList.add("active");
+    btn2.classList.remove("active");
+    btn3.classList.remove("active");
+  }
+  btn2.onclick = function(){
+    slide.style.transform = "translateX(-100%)";
+    btn2.classList.add("active");
+    btn1.classList.remove("active");
+    btn3.classList.remove("active");
+  }
+  btn3.onclick = function(){
+    slide.style.transform = "translateX(-200%)";
+    btn3.classList.add("active");
+    btn2.classList.remove("active");
+    btn1.classList.remove("active");
+  }
+</script>
+</center>
+
+<div class="sidepanel">
+  
+    <a href="about.html"><button class="button button1">ABOUT</button></a><br>
+    <a href="event.html"><button class="button button2">EVENTS</button></a><br>
+    <a href="contacts.html"><button class="button button3">CONTACTS</button></a><br>
+</div>
+
+
+</body>
+</html>
